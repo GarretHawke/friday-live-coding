@@ -1,0 +1,93 @@
+.tools__wrapper {
+  padding-bottom: 90px;
+  background-image: url(../../img/superpowers/Bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media-tablet {
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  @include media-mobile {
+    padding-top: 19px;
+    padding-bottom: 47px;
+  }
+}
+
+.tools__title {
+  max-width: 462px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 70px;
+
+  @include media-tablet {
+    margin-bottom: 50px;
+  }
+
+  @include media-mobile {
+    margin-bottom: 43px;
+  }
+}
+
+.tools-container {
+  @include media-tablet {
+    flex-wrap: wrap;
+    > .tool {
+      flex-basis: 44%;
+      margin-bottom: 54px;
+    }
+  }
+
+  @include media-mobile {
+    > .tool {
+      flex-basis: 100%;
+      margin-bottom: 47px;
+    }
+
+    >:last-child {
+      margin-bottom: 38px;
+    }
+  }
+}
+
+.tools__button {
+  margin-top: 60px;
+  text-align: center;
+
+  @include media-tablet {
+    margin-top: 0;
+  }
+}
+
+// tool block
+
+.tool__icon {
+  margin: 0 0 30px;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+  }
+
+  @include media-mobile {
+    margin-bottom: 8px;
+  }
+}
+
+.tool__title {
+  margin: 0 0 16px;
+
+  @include media-tablet {
+    margin-bottom: 6px;
+  }
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
+}
+
+.tool__text {
+  margin: 0 auto;
+}

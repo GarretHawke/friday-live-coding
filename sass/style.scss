@@ -1,0 +1,36 @@
+// Normalize
+@import "../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+
+// Abstract
+@import "abstract/constants";
+@import "abstract/placeholders";
+@import "abstract/mixins";
+
+// Base
+@import "base/base";
+@import "base/icons";
+@import "base/buttons";
+@import "base/logo";
+@import "base/hamburger";
+@import "base/tags";
+
+// Layouts
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/columns";
+
+// Components
+@import "components/navigation";
+@import "components/promo";
+@import "components/tools";
+@import "components/strategies";
+@import "components/about-us";
+@import "components/employee";
+@import "components/contact-us";
+@import "components/footer";
+
+// Box-sizing of all items
+* {
+  box-sizing: border-box;
+}

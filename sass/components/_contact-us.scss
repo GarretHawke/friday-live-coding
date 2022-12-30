@@ -1,0 +1,143 @@
+.contact-us {
+  background-color: $color-background;
+  padding: 62px 0 82px;
+
+  @include media-tablet {
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+
+  @include media-mobile {
+    padding-top: 34px;
+    padding-bottom: 49px;
+  }
+}
+
+.contact-us-container {
+  @include media-tablet {
+    flex-direction: column;
+  }
+}
+
+.contact-us__title {
+  margin: 0 0 17px;
+
+  @include media-mobile {
+    margin-bottom: 8px;
+  }
+}
+
+.contact-us__content {
+  max-width: 528px;
+  display: flex;
+  flex-direction: column;
+
+  @include media-tablet {
+    max-width: 100%;
+    align-items: center;
+    margin-bottom: 54px;
+  }
+
+  @include media-mobile {
+    margin-bottom: 41px;
+  }
+}
+
+.contact-us__text {
+  margin: 0 0 33px;
+
+  @include media-tablet {
+    margin-bottom: 26px;
+  }
+
+  @include media-mobile {
+    margin-bottom: 24px;
+  }
+}
+
+.contact-us__link {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $color-text;
+
+  > :last-child {
+    margin-left: 11px;
+  }
+}
+
+.contact-us__phone,
+.contact-us__mail {
+  margin: 0;
+  @include font ($size: 2.5rem, $weight: 400);
+
+  @include media-tablet {
+
+  }
+
+  @include media-mobile {
+    @include font ($size: 2.0rem, $weight: 400);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.contact-us__phone {
+  margin: 0 0 19px;
+
+  @include media-mobile {
+    margin-bottom: 17px;
+  }
+}
+
+.contact-us__form {
+  input, textarea {
+    border: 1px solid $color-light;
+    background-color: $color-light;
+    padding: 10px 21px;
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+    }
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 160px;
+  }
+}
+
+.contact-us__line {
+  margin: 0 0 19px;
+
+  @include media-tablet {
+    margin-bottom: 26px;
+  }
+
+  @include media-mobile {
+    flex-direction: column;
+    margin-bottom: 0;
+
+    > * {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.contact-us__button {
+  > * {
+    min-width: 117px;
+    height: 53px;
+  }
+
+  @include media-mobile {
+    margin-top: 24px;
+  }
+}

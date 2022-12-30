@@ -1,0 +1,35 @@
+.header {
+  background-color: $color-light;
+  @extend %shadow;
+  padding: 15px 0 17px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media-tablet {
+    padding-left: 24px;
+  }
+}
+
+.header__logo-line {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__buttons {
+  display: inline-flex;
+  @include media-mobile {
+    display: none;
+  }
+
+  > .button {
+    margin-left: 14px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

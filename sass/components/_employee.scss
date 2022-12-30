@@ -1,0 +1,41 @@
+$image-gap: 32px;
+
+.employee {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: calc((100% / 3) - $image-gap * 2);
+  border-radius: 10px;
+  padding: 35px;
+}
+
+.employee__name {
+  margin: 0;
+  color: $color-text;
+}
+
+.employee__title {
+  @include font ($size: 1.4rem, $weight: 400);
+  margin: 0;
+  color: $color-text;
+}
+
+.employee__mail {
+  @include font ($size: 1.4rem, $weight: 400);
+  margin: 0;
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.employee__photo {
+  position: absolute;
+  right: -$image-gap;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  @extend %shadow;
+}

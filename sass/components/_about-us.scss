@@ -1,0 +1,19 @@
+@import "./employee";
+
+.about-us {
+  padding: 66px 0 100px;
+}
+
+.about-us__title {
+  @include font ($size: 3.4rem, $height: 4.6rem);
+  margin: 0 0 14px;
+}
+
+.about-us__description {
+  @include font ($weight: 400);
+  margin: 0 0 45px;
+}
+
+.employee__wrapper {
+  padding-right: $image-gap;
+}
