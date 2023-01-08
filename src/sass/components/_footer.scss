@@ -28,7 +28,7 @@
   padding-left: 0;
   }
 
-  @include media-tablet {
+  @include media-mobile {
   flex-direction: column;
   }
 }
