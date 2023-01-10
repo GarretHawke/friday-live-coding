@@ -56,6 +56,7 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 
   &_hidden {
     display: none;
@@ -63,6 +64,13 @@
 
   @include media-tablet {
     overflow: hidden;
+  }
+}
+
+.strategy__image {
+  @include media-tablet {
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -77,4 +85,28 @@
   flex-grow: 1;
   margin: 0 0 29px;
   text-align: left;
+}
+
+.strategy-modal__content {
+
+  .strategy__image {
+    width: 100%;
+    
+    @include media-tablet {
+      position: static;
+    }
+  }
+
+  .strategy__date {
+    margin: 0 0 5px;
+    @include font ($size: 1.3rem, $weight: 400);
+  }
+
+  .strategy__name {
+    margin: 0 0 10px;
+  }
+
+  .strategy__text {
+    margin: 0 0 5px;
+  }
 }

@@ -2,6 +2,10 @@
 @import "../../node_modules/normalize-scss/sass/normalize";
 @include normalize();
 
+p {
+  margin: 0;
+}
+
 // Abstract
 @import "abstract/constants";
 @import "abstract/placeholders";
@@ -14,6 +18,7 @@
 @import "base/logo";
 @import "base/hamburger";
 @import "base/tags";
+@import "base/modal";
 
 // Layouts
 @import "layouts/wrapper";
