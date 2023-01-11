@@ -15,10 +15,13 @@ export class ArticleModal extends Modal {
   generateContent() {
     let template = '';
     let article = document.createElement('div');
-    article.className = 'article-modal__content';
+    article.className = 'strategy-modal__content';
 
     this.urlToImage &&
-        (template += `<img src=${this.urlToImage} alt="motivation">`);
+        (template += `
+            <div class="modal-image__container" style="background-image: url('${this.urlToImage}')">
+            </div>
+        `);
     
     if (this.title || this.tags || this.content || this.date) {
       template += `<div class="strategy__content">`;
@@ -36,7 +39,7 @@ export class ArticleModal extends Modal {
         template += `<div class="tags strategy__tags">`;
 
         this.tags.map(tag => {
-          template += `<span class="tag tag_colored">${tag}</span>`;
+          template += `<span class="tag tag_bordered">${tag}</span>`;
         });
 
         template += `</div>`;

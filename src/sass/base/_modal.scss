@@ -17,8 +17,6 @@
   display: flex;
   flex-direction: column;
   width: 675px;
-  min-height: 120px;
-  // max-height: 90%;
   overflow: auto;
 
   @extend %shadow;
@@ -36,7 +34,6 @@
 }
 
 .modal__content {
-  padding: 25px 40px 40px;
   display: flex;
   flex-direction: column;
 }

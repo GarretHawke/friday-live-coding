@@ -6,10 +6,10 @@ const data = [
   {
     id: 1,
     title: 'Increasing Prosperity With Positive Thinking',
-    urlToImage: '../img/strategies/increasing.jpg',
+    urlToImage: '../img/strategies/prosperity.jpg',
     tags: ['Art', 'Design'],
     content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don\'t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What\'s my passion? What kind of career fits my personality?',
-    date: '01.01.2022'
+    date: '01/01/2022'
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const data = [
     urlToImage: '../img/strategies/motivation.jpg',
     tags: ['Culture'],
     content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don\'t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What\'s my passion? What kind of career fits my personality?',
-    date: '01.01.2022'
+    date: '01/01/2022'
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const data = [
     urlToImage: '../img/strategies/success.jpg',
     tags: ['Culture', 'Design', 'Art'],
     content: 'Knowing yourself is the first, and a very critical step in the process of planning your future. How can you figure out what you want to do with your life if you don\'t know: What am I going to do with the  rest of my life? What is my dream job? What do I enjoy doing? What\'s my passion? What kind of career fits my personality?',
-    date: '01.01.2022'
+    date: '01/01/2022'
   }
 ]
 
@@ -38,11 +38,8 @@ window.onload = () => {
     renderArticlesToDom();
   }
 
-  // tags
   clickTagHandler();
 
-  //Click Handler on Modal 
-  //addToolsClickHandler();
 }
 
 const clickTagHandler = () => {
@@ -118,24 +115,12 @@ const generateArticles = (data) => {
   return articles;
 }
 
-// const addToolsClickHandler = () => {
-//   let strategies = document.querySelectorAll('.strategy-wrapper .strategy');
-//   strategies.forEach(strategy => {
-//     strategy.addEventListener('click', () => generateToolsModal());
-//   });
-// }
-
 const generateToolsModal = () => {
   let clickedStrategy = event.target.closest('.strategy').getAttribute('data-id');
   let clickedStrategyData = getClickedData(clickedStrategy);
   
   renderArticleModalWindow(clickedStrategyData);
 }
-
-// const renderModalWindow = content => {
-//   let modal = new Modal ('tools-modal');
-//   modal.createModal(content);
-// }
 
 const addStrategyClickHandler = () => {
   let strategies = document.querySelectorAll('.strategy-wrapper .strategy');

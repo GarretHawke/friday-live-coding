@@ -15,7 +15,10 @@ export class Article {
     article.setAttribute('data-id', this.id);
 
     this.urlToImage &&
-        (template += `<img src=${this.urlToImage} alt="motivation">`);
+        (template += `
+            <div class="strategy-image__container" style="background-image: url('${this.urlToImage}')">
+            </div>`
+        );
     
     if (this.title || this.tags) {
       template += `<div class="strategy__content">`;

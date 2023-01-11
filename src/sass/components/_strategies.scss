@@ -53,6 +53,7 @@
 // strategy
 
 .strategy {
+  width: 377px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -67,10 +68,20 @@
   }
 }
 
-.strategy__image {
+.strategy-image__container {
+  width: 377px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover;
+
   @include media-tablet {
-    position: absolute;
-    top: 0;
+    width: 322px;
+    height: 171px;
+  }
+
+  @include media-mobile {
+    width: 333px;
   }
 }
 
@@ -89,11 +100,22 @@
 
 .strategy-modal__content {
 
-  .strategy__image {
-    width: 100%;
-    
-    @include media-tablet {
-      position: static;
+  .modal-image__container {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    height: 360px;
+
+    @include media-mobile {
+      height: 200px;
+    }
+  }
+
+  .strategy__content {
+    padding: 25px 40px 40px;
+
+    @include media-mobile {
+      padding: 30px;
     }
   }
 
@@ -107,6 +129,6 @@
   }
 
   .strategy__text {
-    margin: 0 0 5px;
+    margin: 0 0 12px;
   }
 }
