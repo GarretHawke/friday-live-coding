@@ -3,7 +3,7 @@
 }
 
 .layout-3-column {
-  @include columns($width: 30%);
+  @include columns($width: 32%);
 
   &:after {
     content: '';

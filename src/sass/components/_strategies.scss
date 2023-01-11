@@ -53,7 +53,6 @@
 // strategy
 
 .strategy {
-  width: 377px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -66,23 +65,26 @@
   @include media-tablet {
     overflow: hidden;
   }
+
+  &:hover {
+
+    .strategy__name {
+      @extend %transition;
+      color: $color-primary;
+    }
+
+  }
+    
 }
 
 .strategy-image__container {
-  width: 377px;
   height: 200px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size:cover;
-
-  @include media-tablet {
-    width: 322px;
-    height: 171px;
-  }
-
-  @include media-mobile {
-    width: 333px;
-  }
+  background-size: cover;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  @extend %shadow;
 }
 
 .strategy__content {
