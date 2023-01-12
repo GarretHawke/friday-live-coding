@@ -637,9 +637,13 @@ h5 {
   margin-left: 9px;
 }
 
+.logo {
+  display: flex;
+}
+
 .logo-object {
   width: 158px;
-  height: 30px;
+  height: 32px;
 }
 @media (max-width: 414px) {
   .logo-object {
