@@ -1,7 +1,9 @@
-import { Article } from "./js/Article";
+import { Article } from './js/Article';
 import { ArticleModal } from "./js/ArticleModal";
 import { Modal } from "./js/Modal";
 import { Data } from "./js/Data";
+
+import './sass/style.scss';
 
 const data = Data;
 const strategiesTags = document.querySelector('.strategies__tags');

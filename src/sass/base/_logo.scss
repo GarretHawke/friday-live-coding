@@ -2,9 +2,14 @@
   display: flex;
 }
 
+
 .logo-object {
   width: 158px;
   height: 32px;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @include media-mobile {
   width: 129px;
